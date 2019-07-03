@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+      * {
+    margin: 0;
+    padding: 0;
+  }
+
+   *,
+   *::before,
+   *::after {
+     box-sizing: inherit;
+   }
+
+   html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+   body {
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 5%;
+  }
+    
+    body {
+      
+background: rgba(147,206,222,1);
+background: -moz-linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(191,211,217,1) 27%, rgba(117,189,209,1) 52%, rgba(125,161,171,1) 80%, rgba(73,165,191,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(27%, rgba(191,211,217,1)), color-stop(52%, rgba(117,189,209,1)), color-stop(80%, rgba(125,161,171,1)), color-stop(100%, rgba(73,165,191,1)));
+background: -webkit-linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(191,211,217,1) 27%, rgba(117,189,209,1) 52%, rgba(125,161,171,1) 80%, rgba(73,165,191,1) 100%);
+background: -o-linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(191,211,217,1) 27%, rgba(117,189,209,1) 52%, rgba(125,161,171,1) 80%, rgba(73,165,191,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(191,211,217,1) 27%, rgba(117,189,209,1) 52%, rgba(125,161,171,1) 80%, rgba(73,165,191,1) 100%);
+background: linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(191,211,217,1) 27%, rgba(117,189,209,1) 52%, rgba(125,161,171,1) 80%, rgba(73,165,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+
+    }
+
+    .wrapper {
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 25vw 30vw 25vw;
+      grid-template-rows: 20vh 80vh;
+      
+      grid-template-areas: "left center right"
+                           "picks picks picks";
+      grid-gap: 10px;
+    }
+
+    header {
+      grid-area: center;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .image-wrapper-left {
+      grid-area: left;
+
+      min-height: 100%;
+      background: url('../images/television.svg') no-repeat;
+      background-size: contain;
+
+    }
+
+    .image-wrapper-right {
+      grid-area: right;
+      background: url('../images/television.svg') no-repeat;
+      background-size: contain;
+      margin-left: 50%;
+    }
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+    }
+
+    
+
+    .images {
+      width: 100%;
+    }
+
+    .picks_grid {
+      margin: 0;
+      padding: 0;
+      grid-area: picks;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 33%);
+      grid-gap: 3em;
+      list-style: none;
+      /*justify-content: center;*/
+      /*margin: 10px auto;*/
+    }
+
+    .picks_grid .card a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .picks_grid .card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .picks_grid .card h3 {
+      color: #fff;
+      font-size: 1.7rem;
+      text-align: center;
+      }
+   
+   /*
+    .details {
+      grid-area: details;
+    }
+
+    .details img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+
+   */
+
+  </style>
+  <title>Top Rated TV Show Picks</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h2>Top Rated TV Shows</h2>
+    </header>
+      <div class="image-wrapper-left"></div>
+      <div class="image-wrapper-right"></div>
+
+      <ul class="picks_grid">
+        {%SHOW_CARDS%}
+        
+        <!-- 
+        <li class="card">
+        <a href="#">
+        <h3>{%TITLE%}</h3>
+        <img src={%IMAGE%} alt="">
+        </a>
+        </li>
+
+        <li class="card">
+        <a href="#">
+        <h3>The Sopranos</h3>
+        <img src="sopranos.jpg" alt="">
+        </a>
+        </li>
+
+        <li class="card">
+        <h3>Cosmos</h3>
+        <img src="cosmos.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>Rick and Morty</h3>
+        <img src="rick-n-morty.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>Game of Thrones</h3>
+        <img src="got.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>The Wire</h3>
+        <img src="the-wire.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>Chernobyl</h3>
+        <img src="chernobyl.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>Breaking Bad</h3>
+        <img src="breaking-bad.jpg" alt="">
+        </li>
+
+        <li class="card">
+        <h3>Planet Earth 2</h3>
+        <img src="planet-earth-2.jpg" alt="">
+        </li>
+      -->
+
+      </ul>
+      
+      <!-- 
+      <div class="details">
+        <h2 class="title">
+          The Sopranos
+        </h2>
+        <img src="sopranos.jpg" alt="">
+        <p>Genre: Drama Crime</p>
+        <p>Released: January 10 1999</p>
+        <p>Stars: James Gandolfini, Lorraine Bracco, Edie Falco</p>
+        <p>Production: HBO</p>
+        <p>Description: New Jersey mob boss Tony Soprano deals with personal 
+        and professional issues in his home and business life that affect his mental state, 
+        leading him to sek professional psychiatric counseling</p>
+      -->
+        
+      </div>
+      <!-- 
+      <img src="band-of-brothers.jpg" alt="" class="images">
+      <img src="breaking-bad.jpg" alt="" class="images">
+      <img src="chernobyl.jpg" alt="" class="images">
+      <img src="cosmos.jpg" alt="" class="images">
+      <img src="got.jpg" alt="" class="images">
+      <img src="planet-earth.jpg" alt="" class="images">
+      <img src="planet-earth-2.jpg" alt="" class="images">
+      <img src="rick-n-morty.jpg" alt="" class="images">
+      <img src="sopranos.jpg" alt="" class="images">
+      <img src="the-wire.jpg" alt="" class="images">
+       -->
+  </div>
+
+</body>
+</html>

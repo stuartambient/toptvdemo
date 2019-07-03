@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0,
+    "title": "Chernobyl",
+    "image": "../images/chernobyl.jpg",
+    "genres": "Drama, History",
+    "releasedate": "May 6, 2019",
+    "stars": "Jessie Buckley, Jared Harris, Stellan Skarsgård",
+    "producer": "HBO",
+    "description": "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes."
+  },
+  {
+    "id": 1,
+    "title": "Planet Earth II",
+    "image": "../images/planet-earth-2.jpg",
+    "genres": "Documentary",
+    "releasedate": "18 February 2017",
+    "stars": "David Attenborough",
+    "producer": "BBC Natural History",
+    "description": "David Attenborough returns in this breathtaking documentary showcasing life on Planet Earth."
+  },
+  {
+    "id": 2,
+    "title": "Band of Brothers",
+    "image": "../images/band-of-brothers.jpg",
+    "genres": "Action, Drama, History, War",
+    "releasedate": "9 September 2001",
+    "stars": "Scott Grimes, Damian Lewis, Ron Livingston",
+    "producer": "Dreamworks, HBO",
+    "description": "The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day. "
+  },
+  {
+    "id": 3,
+    "title": "Planet Earth",
+    "image": "../images/planet-earth.jpg",
+    "genres": "Documentary",
+    "releasedate": "March 25 2007",
+    "stars": "David Attenborough, Sigourney Weaver",
+    "producer": "BBC",
+    "description": "Emmy Award-winning, 11 episodes, five years in the making, the most expensive nature documentary series ever commissioned by the BBC, and the first to be filmed in high definition. "
+  },
+  {
+    "id": 4,
+    "title": "Breaking Bad",
+    "image": "../images/breaking-bad.jpg",
+    "genres": "Crime, Drama, Thriller",
+    "releasedate": "January 20 2008",
+    "stars": "Bryan Cranston, Aaron Paul, Anna Gunn",
+    "producer": "Sony Pictures",
+    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future."
+  },
+  {
+    "id": 5,
+    "title": "Game of Thrones",
+    "image": "../images/got.jpg",
+    "genres": "Action, Adventure",
+    "releasedate": "April 17 2011",
+    "stars": " Emilia Clarke, Peter Dinklage, Kit Harington",
+    "producer": "HBO",
+    "description": "Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years. "
+  },
+  {
+    "id": 6,
+    "title": "The Wire",
+    "image": "../images/the-wire.jpg",
+    "genres": "Crime, Drama Thriller",
+    "releasedate": "June 2 2002",
+    "stars": "Dominic West, Lance Reddick, Sonja Sohn",
+    "producer": "Blown Deadline / HBO",
+    "description": "Baltimore drug scene, seen through the eyes of drug dealers and law enforcement."
+  },
+  {
+    "id": 7,
+    "title": "Cosmos",
+    "image": "../images/cosmos.jpg",
+    "genres": "Documentary",
+    "releasedate": "March 9 2014",
+    "stars": "Neil deGrasse Tyson, Stoney Emshwiller, Piotr Michael",
+    "producer": "Cosmos Studios / National Geographic",
+    "description": "An exploration of our discovery of the laws of nature and coordinates in space and time."
+  },
+  {
+    "id": 8,
+    "title": "Rick and Morty",
+    "image": "../images/rick-n-morty.jpg",
+    "genres": "Animation, Adventure, Comedy, Sci-Fi",
+    "releasedate": "December 2 2013",
+    "stars": "Justin Roiland, Chris Parnell, Spencer Grammer",
+    "producer": "Harmonius Claptrap, Starburn Industries",
+    "description": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson. "
+  },
+  {
+    "id": 9,
+    "title": "The Sopranos",
+    "image": "../images/sopranos.jpg",
+    "genres": "Drama, Crime",
+    "releasedate": "January 10, 1999",
+    "stars": "James Gandolfini, Lorraine Bracco, Edie Falco",
+    "producer": "HBO",
+    "description": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. "
+  }
+]
