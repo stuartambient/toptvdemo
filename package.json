@@ -4,7 +4,7 @@
   "description": "just a quick basic node page for challenge to udemy course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
