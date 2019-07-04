@@ -1,0 +1,19 @@
+{
+  "name": "toptv",
+  "version": "1.0.0",
+  "description": "just a quick basic node page for challenge to udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartambient/toptvdemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuartambient/toptvdemo/issues"
+  },
+  "homepage": "https://github.com/stuartambient/toptvdemo#readme"
+}
