@@ -38,15 +38,33 @@
       grid-template-columns: 25vw 30vw 25vw;
       grid-template-rows: 20vh 80vh;
       
-      grid-template-areas: "left center right"
+      grid-template-areas: "left center center"
                            "picks picks picks";
       grid-gap: 10px;
+    }
+
+    @media screen and (max-width: 925) {
+      .wrapper {
+        grid-template-rows: 15vh 80vh;
+      }
+    }
+
+    @media screen and (max-width: 725) {
+      .wrapper {
+        grid-template-rows: 10vh 80vh;
+      }
+    }
+
+    @media screen and (max-width: 560) {
+      .wrapper {
+        grid-template-rows: 5vh 80vh;
+      }
     }
 
     header {
       grid-area: center;
       align-self: center;
-      justify-self: center;
+      justify-self: start;
     }
 
     .image-wrapper-left {
@@ -55,13 +73,13 @@
       background-size: contain;
 
     }
-
+    /*
     .image-wrapper-right {
       grid-area: right;
       background: url('../images/television.svg') no-repeat;
       background-size: contain;
-      margin-left: 50%;
     }
+    */
 
     h2 {
       color: white;
@@ -112,10 +130,10 @@
           grid-template-rows: repeat(6, 33%);
         }
 
-        .image-wrapper-left, .image-wrapper-right {
+        /*.image-wrapper-left, .image-wrapper-right {
           width: 50%;
           height: 50%;
-        }
+        }*/
       }
 
     .picks_grid .card a {
@@ -149,7 +167,7 @@
       <h2>Top Rated TV Shows</h2>
     </header>
       <div class="image-wrapper-left"></div>
-      <div class="image-wrapper-right"></div>
+      <!--<div class="image-wrapper-right"></div>-->
 
       <ul class="picks_grid">
         {%SHOW_CARDS%}

@@ -43,7 +43,7 @@
         grid-template-rows: 20vh 80vh;
 
         grid-template-areas:
-          "left center right"
+          "left center center"
           "main main main";
         grid-gap: 10px;
       }
@@ -51,7 +51,7 @@
       header {
         grid-area: center;
         align-self: center;
-        justify-self: center;
+        justify-self: start;
       }
 
       .image-wrapper-left {
@@ -62,16 +62,21 @@
         background-size: contain;
       }
 
-      .image-wrapper-right {
-        grid-area: right;
-        background: url("../images/television.svg") no-repeat;
-        background-size: contain;
-        margin-left: 50%;
-      }
-
       h2 {
         color: white;
         font-size: 3rem;
+      }
+
+      @media screen and (max-width: 925px) {
+        header h2 {
+          font-size: 2.2rem;
+        }
+      }
+
+      @media screen and (max-width: 725px) {
+        header h2 {
+          font-size: 1.8rem;
+        }
       }
 
       .images {
@@ -175,7 +180,7 @@
         </a>
       </header>
       <div class="image-wrapper-left"></div>
-      <div class="image-wrapper-right"></div>
+      <!--<div class="image-wrapper-right"></div>-->
 
       <div class="main">
         <div class="details">
