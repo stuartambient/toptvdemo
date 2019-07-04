@@ -31,6 +31,7 @@ const tempDetails = fs.readFileSync(
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 
 const dataObj = JSON.parse(data);
+const PORT = process.env.PORT || 5000;
 
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
@@ -70,6 +71,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(() => {
-  console.log("Listening to requests on port 8080");
+server.listen(PORT () => {
+  console.log(`Listening to requests on ${PORT}`);
 });
