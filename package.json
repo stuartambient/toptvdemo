@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stuartambient/toptvdemo/issues"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "homepage": "https://github.com/stuartambient/toptvdemo#readme"
 }
